@@ -11,7 +11,7 @@ $(document).ready(function() {
 		offset: '75%'
 	})
 
-	var fadeHeadingFirst = $('.description').waypoint(function() {
+	var description = $('.description').waypoint(function() {
 	  $('.description').addClass('showUp');
 	}, {
 		offset: '75%'

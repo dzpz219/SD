@@ -5,13 +5,14 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:900' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/welcome.css">
+	<link rel="stylesheet" href="css/sd.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
-<body class="home">
+<body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -21,7 +22,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="login.html">Login</a>
+				<a class="navbar-brand" href="#">Login</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -32,22 +33,31 @@
 			</div>
 		</div>
 	</nav>
-	<div class="site-wrapper">
-		<div class="site-wrapper-inner">
-			<div class="cover-container">
-				<div class="inner cover">
-					<h1>Welcome to Stacked Deck</h1>
-					<p>Begin your free trial today and start winning!</p>
-					<p>
-					<a href="features.html" class="btn btn-lg btn-success">Start Now</a>
-					</p>
-				</div>
-				<div class="mastfoot">
-					<div class="inner">
-						<p>Stacked Deck, by <a href="#">Danny Zhang</a>.</p>
-					</div>
+	<div class="container">
+		<form class="form-horizontal" style="margin-top: 25%">
+			<div class="form-group">
+				<label for="userName" class="col-sm-4 control-label">User Name:</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="userName">
 				</div>
 			</div>
+			<div class="form-group">
+				<label for="password" class="col-sm-4 control-label">Password:</label>
+				<div class="col-sm-4">
+					<input type="password" class="form-control" id="password">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="login" class="col-xs-6 col-sm-4 control-label"><a href="#">Forgot password?</a></label>
+				<div class="col-xs-6 col-sm-4">
+					<button class="btn btn-success pull-right">Login</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="footer-container">
+		<div class="footer">
+			<p>Stacked Deck, by <span class="text-muted">Danny Zhang</span>.</p>
 		</div>
 	</div>
 </body>
