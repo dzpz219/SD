@@ -7,6 +7,35 @@ body {
 	background-color: #333;
 }
 
+/* Margins, Alignment */
+.margin-bottom-sm {
+	margin-bottom: 50px;
+}
+
+.margin-bottom-md {
+	margin-bottom: 100px;
+}
+
+.margin-bottom-lg {
+	margin-bottom: 150px;
+}
+
+.margin-top-sm {
+	margin-top: 50px;
+}
+
+.margin-top-md {
+	margin-top: 100px;
+}
+
+.margin-top-lg {
+	margin-top: 150px;
+}
+
+.v-align {
+	position: relative;
+	top: 20%;
+}
 /* Buttons */
 .btn:focus,
 .btn:active:focus,
@@ -33,4 +62,20 @@ a:hover {
 	left: 0;
 	width: 100%;
 	text-align: center;
+}
+
+#userName, #password {
+	font-family: FontAwesome;
+	font-size: 20px;
+}
+
+
+.panel.with-nav-tabs .panel-heading{
+    padding: 5px 5px 0 5px;
+}
+.panel.with-nav-tabs .nav-tabs{
+	border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified{
+	margin-bottom: -1px;
 }
