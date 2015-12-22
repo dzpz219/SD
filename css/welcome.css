@@ -2,6 +2,10 @@
  * Globals
  */
 
+nav {
+  text-align: left;
+}
+
 /* Links */
 a,
 a:focus,

@@ -11,6 +11,11 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="js/contact.js"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTRpw9hOoqdXsTSj8dOlOLuIUU3ZuUVmg&callback=initMap">
+	</script>
+	
 </head>
 <body>
 	<div>
@@ -36,62 +41,44 @@
 		</nav>
 	</div>
 	<div class="container v-align">
-		<form class="form-horizontal">
-			<div class="form-group">
-				<label for="userName" class="col-sm-4 control-label">User Name:</label>
-				<div class="col-sm-4">
-					<input type="text" class="form-control" id="userName">
-				</div>
+	<h1 class="margin-bottom-sm">Contact Us</h1>
+		<div class="row">
+			<div class="col-sm-6">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="name" class="control-label col-sm-3">Name:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="phone" class="control-label col-sm-3">Phone:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="phone">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email" class="control-label col-sm-3">E-Mail:</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="comments" class="control-label col-sm-3">Comments:</label>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-3 col-sm-9">
+							<textarea style="width: 100%" rows="15">
+								
+							</textarea>
+						</div>
+					</div>
+				</form>
 			</div>
-			<div class="form-group">
-				<label for="password" class="col-sm-4 control-label">Password:</label>
-				<div class="col-sm-4">
-					<input type="password" class="form-control" id="password">
-				</div>
+			<div class="col-sm-6">
+				<div id="map" style="height: 500px"></div>
 			</div>
-			<div class="form-group">
-				<label for="passwordConfirm" class="col-sm-4 control-label">Password Confirm:</label>
-				<div class="col-sm-4">
-					<input type="password" class="form-control" id="passwordConfirm">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="email" class="col-sm-4 control-label">E-Mail:</label>
-				<div class="col-sm-4">
-					<input type="text" class="form-control" id="email">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="recovery1" class="col-sm-4 control-label">Password Recovery Question 1:</label>
-				<div class="col-sm-4">
-					<select class="form-control" id="recovery1"></select>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="answer1" class="col-sm-4 control-label">Answer:</label>
-				<div class="col-sm-4">
-					<input type="text" class="form-control" id="answer1">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="recovery2" class="col-sm-4 control-label">Password Recovery Question 2:</label>
-				<div class="col-sm-4">
-					<select class="form-control" id="recovery2"></select>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="answer2" class="col-sm-4 control-label">Answer:</label>
-				<div class="col-sm-4">
-					<input type="text" class="form-control" id="answer2">
-				</div>
-			</div>
-			<div class="form-group margin-top-sm">
-				<div class="col-sm-offset-4 col-sm-4">
-					<button class="btn btn-success">Reset</button>
-					<button class="btn btn-success pull-right">Register</button>
-				</div>
-			</div>
-		</form>
+		</div>
 	</div>
 	<div class="footer-container">
 		<div class="footer">
