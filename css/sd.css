@@ -32,7 +32,17 @@ body {
 	margin-top: 150px;
 }
 
-.v-align {
+.v-align-sm {
+	position: relative;
+	top: 6%;
+}
+
+.v-align-md {
+	position: relative;
+	top: 10%;
+}
+
+.v-align-lg {
 	position: relative;
 	top: 20%;
 }
